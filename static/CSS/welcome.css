@@ -1,0 +1,55 @@
+html
+{
+    min-height: 100%;
+    min-width: 100%;
+}
+body
+{
+    min-height: 100%;
+    min-width: 100%;
+    background-image: linear-gradient(to bottom left, purple, rgb(255, 230, 0));
+    background-repeat: no-repeat;
+}
+
+.heading
+{
+    margin: 3% 25%;
+    font-size: 15vh;
+    font-family: "Tangerine", sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+.flex-container
+{
+    margin: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.flex-section
+{
+    margin: 5vh 0vh;
+    width: 60vh;
+    padding: 10vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.button
+{
+    margin: 10% 25%;
+    border-radius: 3vh;
+    background-color: rgb(187, 2, 187);
+    color: white;
+    font-size: large;
+    padding: 1vh 2vh;
+}
+.button:hover
+{
+    background-color: rgb(255, 230, 0);
+    color: black;
+}

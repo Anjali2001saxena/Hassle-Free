@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Result Page </title>
+    <link rel="icon" href="../static/Images/logo.jpg">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Tangerine&effect=neon|outline|emboss|shadow-multiple' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/CSS/submit.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1 class="heading">Followers List</h1>
+    <div class="flex-container">
+        <ul>
+            {% for user in answer %}
+               <li>{{ user[0] }}</li>
+            {% endfor %}  
+         </ul>
+         <ul>
+            {% for user in answer %}
+               {% if user[1]== 0 %}
+               <li class="real">Real account</li>
+               {% else %}
+               <li class="fake">Fake account</li>
+               {% endif %}
+            {% endfor %}  
+         </ul>
+    </div>
+    
+</body>
+</html>

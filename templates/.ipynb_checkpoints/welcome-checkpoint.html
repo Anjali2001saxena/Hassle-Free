@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <link rel="icon" href="../static/Images/logo.jpg">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Tangerine&effect=neon|outline|emboss|shadow-multiple' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/CSS/welcome.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+    <h1 class="heading">Welcome to Hassle-Free!!</h1>
+
+    <div class="flex-container">
+        <div class="flex-section">
+            <h1>Content Reach</h1>
+            <button class="button" onclick="window.location.href='{{ url_for( 'reach_prediction') }}';">Click here</button>
+        </div>
+        <div class="flex-section">
+            <h1>Followers Status</h1>
+            <button class="button" onclick="window.location.href='{{ url_for( 'resultpage') }}';">Click here</button>
+        </div>
+    </div>
+</body>
+</html>

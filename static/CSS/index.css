@@ -1,0 +1,69 @@
+html
+{
+    min-height: 100%;
+    min-width: 100%;
+}
+body
+{
+    min-height: 100%;
+    min-width: 100%;
+    background-image: linear-gradient(to bottom left, purple, rgb(255, 230, 0));
+    background-repeat: no-repeat;
+}
+
+.flex-container
+{
+    margin: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.flex-section
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading
+{
+    margin: 3vh 15vh;
+    font-size: 15vh;
+    font-family: "Tangerine", sans-serif;
+    font-weight: bolder;
+}
+
+.image
+{
+    margin: 3vh 15vh;
+    height: 80vh;
+}
+
+.form
+{
+    width: 70%;
+    margin: 1vh 15vh;
+    padding: 8%;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: x-large;
+}
+input
+{
+    width: 90%;
+    margin: 2vh 0vh;
+}
+.button
+{
+    width: auto;
+    margin: 5% 35%;
+    border-radius: 30vh;
+    background-color: rgb(187, 2, 187);
+    color: white;
+    font-size: large;
+    padding: 1vh 2vh;
+}
+.button:hover
+{
+    background-color: rgb(255, 230, 0);
+    color: black;
+}
